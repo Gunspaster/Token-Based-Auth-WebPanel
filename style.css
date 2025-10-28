@@ -1,0 +1,18 @@
+:root{--bg:#071023;--card:#0f1724;--accent:#7c3aed;--muted:#94a3b8}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:radial-gradient(900px 400px at 10% 10%, rgba(124,58,237,0.08), transparent), linear-gradient(180deg,#020617 0%,#071124 100%);color:#e6eef8}
+.wrap{max-width:1000px;margin:36px auto;padding:28px}
+header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.brand{display:flex;gap:14px;align-items:center}
+.logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:grid;place-items:center;font-weight:700;color:#071124}
+h1{font-size:18px;margin:0}
+p.lead{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:1fr 360px;gap:20px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+.login-input{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;border:none;background:var(--accent);color:#071124;font-weight:700;cursor:pointer}
+.muted{color:var(--muted);font-size:14px}
+.token{font-family:monospace;background:rgba(255,255,255,0.03);padding:10px;border-radius:10px;display:inline-block}
+.small{font-size:13px}
+.flash{border-left:4px solid #34d399}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
